@@ -3,6 +3,7 @@
 
 ## High Priority
 - [x] Build the SQL file to create the tables and indexs
+- [-] Create the local Postgresql database service
 - [-] Build the models in the backend
 
 ## Medium Priority
