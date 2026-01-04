@@ -11,7 +11,7 @@ namespace ChatSharp.Services
         public bool SendMessage(Message message) {
             return true;
         }
-        //function to recieve messages messages (returns an array of message object type)
+        //function to recieve messages (returns an array of message object type)
         public List<Message> RecieveMessages() {
             return new List<Message>();
         

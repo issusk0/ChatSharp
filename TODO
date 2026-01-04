@@ -1,0 +1,27 @@
+# Project: ChatSharp
+# Created: [January 3, 2026]
+
+## High Priority
+- [x] Build the SQL file to create the tables and indexs
+- [-] Build the models in the backend
+
+## Medium Priority
+- [ ] Build the services that will be managing the income data and inserting in the database
+- [ ] Build the controllers that will be using the service to recieve and send data to the frontend(API)
+
+## Low Priority
+- [ ] Build the frontend 
+- [ ] Documentation update
+
+## Completed
+- [x] Finished task
+- [x] Completed feature
+
+## Notes
+Any additional notes or context about the project
+
+---
+Legend:
+- [-] = In process
+- [ ] = Not done
+- [x] = Completed
