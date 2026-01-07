@@ -50,7 +50,7 @@ Indexs summary:
 
 CREATE TABLE users (
     user_id SERIAL PRIMARY KEY,
-    username VARCHAR(50) UNIQUE NOT NULL, 
+    username TEXT UNIQUE NOT NULL, 
     password_hash TEXT NOT NULL,         
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -61,7 +61,7 @@ CREATE INDEX idx_user_username ON users(username);
 CREATE TABLE chat_sharp_sessions(
     session_id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
-    token VARCHAR(255) UNIQUE NOT NULL,   
+    token TEXT UNIQUE NOT NULL,   
     expires_at TIMESTAMP NOT NULL,        
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     last_used_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -79,7 +79,7 @@ CREATE INDEX idx_chat_sharp_sessions_user_id ON chat_sharp_sessions(user_id);
 CREATE TABLE chats (
     chat_id SERIAL PRIMARY KEY,
     is_group BOOLEAN DEFAULT FALSE,       
-    name VARCHAR(100),                   
+    chat_name TEXT not null,                   
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
